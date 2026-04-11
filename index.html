@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>プライバシーポリシー — もじあそび レッスン</title>
+<style>
+  :root {
+    --primary: #FFA726;
+    --primary-dark: #FB8C00;
+    --text: #263238;
+    --muted: #607D8B;
+    --bg: #FFF8E1;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.75;
+  }
+  header {
+    background: linear-gradient(135deg, #FFB74D, var(--primary-dark));
+    color: white;
+    padding: 32px 24px 24px;
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+  header .app-title {
+    font-size: 14px;
+    opacity: 0.95;
+  }
+  .lang-switch {
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+  }
+  .lang-switch button {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .lang-switch button.active,
+  .lang-switch button:hover {
+    background: white;
+    color: var(--primary-dark);
+  }
+  main {
+    max-width: 780px;
+    margin: 24px auto 60px;
+    padding: 0 24px;
+  }
+  article {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px 32px 40px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  article h1 {
+    font-size: 22px;
+    margin-top: 0;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 8px;
+  }
+  article h2 {
+    font-size: 17px;
+    margin-top: 28px;
+    color: var(--primary-dark);
+  }
+  article h3 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  article p { margin: 10px 0; }
+  article ul { padding-left: 24px; }
+  article li { margin: 4px 0; }
+  article code {
+    background: #F5F5F5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  article a { color: var(--primary-dark); }
+  article strong { color: var(--text); }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .meta > div { margin: 2px 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    padding: 16px;
+  }
+  [data-lang] { display: none; }
+  [data-lang].visible { display: block; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>プライバシーポリシー / Privacy Policy</h1>
+    <div class="app-title">もじあそび レッスン — Moji Asobi Lesson</div>
+    <div class="lang-switch">
+      <button type="button" data-switch="ja" class="active">日本語</button>
+      <button type="button" data-switch="en">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 日本語版 -->
+    <article data-lang="ja" class="visible">
+      <h1>プライバシーポリシー</h1>
+      <div class="meta">
+        <div><strong>アプリ名</strong>: もじあそび レッスン</div>
+        <div><strong>開発者</strong>: 株式会社DoM</div>
+        <div><strong>最終更新日</strong>: 2026年4月11日</div>
+        <div><strong>施行日</strong>: 2026年4月11日</div>
+      </div>
+
+      <p>株式会社DoM（以下「当方」といいます）は、モバイルアプリケーション「もじあそび レッスン」（以下「本アプリ」といいます）における、利用者の情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+      <p>本アプリは未就学児・幼稚園児を主な利用者として想定した子ども向けアプリです。Google Play のファミリーポリシーおよび米国児童オンラインプライバシー保護法（COPPA）、EU 一般データ保護規則（GDPR、GDPR‑K）に沿った運営を行います。</p>
+
+      <h2>1. 収集する情報</h2>
+      <p>本アプリは <strong>利用者の個人情報を一切収集しません</strong>。具体的には、氏名・メールアドレス・電話番号・位置情報・写真・連絡先・マイク音声・カメラ映像などを取得することはありません。</p>
+      <p>本アプリがアクセスする情報は次のものだけで、いずれも <strong>お使いの端末内部に保存され、外部サーバーに送信されることはありません</strong>。</p>
+      <ul>
+        <li>練習の進捗（どの行を練習したか、達成した項目数、獲得したバッジ、連続練習日数、累計で練習した文字数など）</li>
+      </ul>
+      <p>これらのデータは Android の <code>SharedPreferences</code> 領域に保存され、本アプリをアンインストールすると同時に削除されます。</p>
+
+      <h2>2. 情報の使用目的</h2>
+      <p>端末内部に保存された進捗データは、以下の目的でのみ利用します。</p>
+      <ul>
+        <li>練習完了状況をホーム画面に表示するため</li>
+        <li>連続練習日数やバッジなど、学習を継続する動機付けを表示するため</li>
+      </ul>
+
+      <h2>3. 第三者提供・外部送信</h2>
+      <p>本アプリは、利用者から取得したいかなる情報も、当方から第三者に提供することはありません。ただし、次の第三者サービスを利用しており、そのサービスが独自に匿名の技術情報を収集する場合があります。</p>
+
+      <h3>Google AdMob（広告配信）</h3>
+      <p>本アプリは、Google Mobile Ads SDK（AdMob）を利用して広告を表示します。AdMob は、広告の表示および最適化のために、端末識別子・広告識別子・IP アドレス・アプリの利用状況などを取得する場合があります。</p>
+      <p>本アプリは <strong>子ども向けアプリとして明示的に設定</strong> されており、次の条件で広告を配信します。</p>
+      <ul>
+        <li><code>TagForChildDirectedTreatment</code> を <strong>yes（子ども向け）</strong> に設定（米国 COPPA 準拠のシグナル）</li>
+        <li><code>MaxAdContentRating</code> を <strong>G（全年齢対象）</strong> に制限</li>
+        <li>パーソナライズ広告（興味関心に基づく広告）ではなく、<strong>コンテキスト広告</strong> のみが表示されます</li>
+        <li>広告 ID の取得・クッキー利用などが制限されます</li>
+      </ul>
+      <p>AdMob のプライバシーに関する詳細は Google のポリシーをご参照ください。</p>
+      <ul>
+        <li>Google プライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+        <li>AdMob 子ども向けラベル付き広告: <a href="https://support.google.com/admob/answer/6223431" target="_blank" rel="noopener">https://support.google.com/admob/answer/6223431</a></li>
+      </ul>
+
+      <h2>4. 子ども向けの取り扱いについて（COPPA / GDPR‑K）</h2>
+      <p>本アプリは13歳未満（EU 一部の国では16歳未満）の子どもが使用することを想定しており、次の点を保証します。</p>
+      <ul>
+        <li>子どもの個人情報を収集しません</li>
+        <li>アカウント登録、氏名入力、メールアドレス入力などの個人識別が可能な入力機能を <strong>設けません</strong></li>
+        <li>広告は G レーティング（全年齢対象）のもののみ表示されます</li>
+        <li>広告配信時には子ども向けフラグが有効化され、行動ターゲティング広告は配信されません</li>
+        <li>アプリ内課金（IAP）はありません</li>
+        <li>ソーシャルメディア共有機能はありません</li>
+        <li>外部ブラウザ・外部アプリへのリンクは、広告枠を除いて設けていません</li>
+      </ul>
+
+      <h2>5. 端末の権限</h2>
+      <p>本アプリが要求する Android パーミッションは、広告配信に必要な最小限のもの（<code>INTERNET</code> 等）のみです。</p>
+      <p>次のパーミッションは <strong>一切使用しません</strong>。</p>
+      <ul>
+        <li>マイク（<code>RECORD_AUDIO</code>）</li>
+        <li>カメラ（<code>CAMERA</code>）</li>
+        <li>位置情報（<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>）</li>
+        <li>連絡先（<code>READ_CONTACTS</code>）</li>
+        <li>ストレージ（<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>）</li>
+        <li>電話情報（<code>READ_PHONE_STATE</code>）</li>
+      </ul>
+      <p>また、音声読み上げ機能は、端末 OS に搭載されている標準の Text‑to‑Speech（TTS）エンジンを呼び出しているだけで、音声データが外部に送信されることはありません。</p>
+
+      <h2>6. データの保管期間と削除</h2>
+      <p>進捗データはお使いの端末内部にのみ保存されます。データを完全に削除したい場合は、以下のいずれかの方法で実施してください。</p>
+      <ul>
+        <li>本アプリをアンインストールする</li>
+        <li>Android の「設定 → アプリ → もじあそび レッスン → ストレージ → データを削除」を実行する</li>
+      </ul>
+      <p>当方がサーバー側で保管しているデータはありません。</p>
+
+      <h2>7. 安全管理措置</h2>
+      <p>本アプリは外部サーバーを持たず、利用者情報は端末内部にのみ保存されるため、外部からの不正アクセスによる情報漏えいリスクは非常に限定的です。端末自体のセキュリティ（画面ロック、OS の最新化など）を保つことで、進捗データの保護が可能です。</p>
+
+      <h2>8. 第三者サイトへのリンク</h2>
+      <p>本アプリから他のウェブサイトや外部サービスへ遷移する可能性があるのは、表示される広告をタップした場合のみです。遷移先のウェブサイトの情報収集については、当方は責任を負いかねますので、各ウェブサイトのプライバシーポリシーをご確認ください。</p>
+
+      <h2>9. プライバシーポリシーの変更</h2>
+      <p>法令の改正、アプリの機能追加、または運営方針の変更などにより、本プライバシーポリシーを改定する場合があります。重要な変更がある場合は、アプリ内通知や本ページでお知らせします。改定後もアプリを使用し続けることで、改定内容に同意したものとみなします。</p>
+
+      <h2>10. お問い合わせ</h2>
+      <p>本プライバシーポリシーまたは本アプリに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <p>
+        <strong>開発者</strong>: 株式会社DoM<br>
+        <strong>メールアドレス</strong>: <a href="mailto:e.kimura@dom-grp.com">e.kimura@dom-grp.com</a>
+      </p>
+    </article>
+
+    <!-- English version -->
+    <article data-lang="en">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <div><strong>App Name</strong>: Moji Asobi Lesson (もじあそび レッスン)</div>
+        <div><strong>Developer</strong>: DoM Co., Ltd. (株式会社DoM)</div>
+        <div><strong>Last Updated</strong>: April 11, 2026</div>
+        <div><strong>Effective Date</strong>: April 11, 2026</div>
+      </div>
+
+      <p>DoM Co., Ltd. ("we", "us", "our") provides this Privacy Policy regarding the handling of information in the mobile application "Moji Asobi Lesson" (the "App").</p>
+      <p>The App is designed primarily for preschool children. We operate the App in compliance with the Google Play Families Policy, the US Children's Online Privacy Protection Act (COPPA), and the EU General Data Protection Regulation (GDPR and GDPR‑K).</p>
+
+      <h2>1. Information We Collect</h2>
+      <p><strong>We do not collect any personal information from users.</strong> Specifically, we do not collect names, email addresses, phone numbers, location data, photos, contacts, microphone audio, or camera video.</p>
+      <p>The App only stores the following data, all of which is <strong>kept locally on the user's device and never transmitted to any external server</strong>:</p>
+      <ul>
+        <li>Practice progress (which rows have been practiced, achievements, earned badges, consecutive practice day streak, total characters written)</li>
+      </ul>
+      <p>This data is stored in Android's <code>SharedPreferences</code> and is deleted when the App is uninstalled.</p>
+
+      <h2>2. How We Use the Information</h2>
+      <p>The locally stored progress data is used solely for the following purposes:</p>
+      <ul>
+        <li>Displaying completed practice status on the home screen</li>
+        <li>Displaying consecutive practice day streaks and badges to motivate continued learning</li>
+      </ul>
+
+      <h2>3. Third Parties and External Transmission</h2>
+      <p>We do not share any user information with third parties. However, the App uses the following third-party services, which may independently collect anonymous technical information:</p>
+
+      <h3>Google AdMob (Advertising)</h3>
+      <p>The App uses the Google Mobile Ads SDK (AdMob) to display advertisements. AdMob may collect device identifiers, advertising identifiers, IP addresses, and app usage information to serve and optimize ads.</p>
+      <p>The App is <strong>explicitly configured as a child-directed app</strong>, and ads are served with the following restrictions:</p>
+      <ul>
+        <li><code>TagForChildDirectedTreatment</code> is set to <strong>yes</strong> (signaling COPPA compliance)</li>
+        <li><code>MaxAdContentRating</code> is restricted to <strong>G</strong> (general audience)</li>
+        <li>Only <strong>contextual</strong> (non-personalized) ads are served</li>
+        <li>Access to advertising identifiers and cookies is restricted</li>
+      </ul>
+      <p>For details, see:</p>
+      <ul>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+        <li>AdMob child-directed treatment: <a href="https://support.google.com/admob/answer/6223431" target="_blank" rel="noopener">https://support.google.com/admob/answer/6223431</a></li>
+      </ul>
+
+      <h2>4. Child-Directed Treatment (COPPA / GDPR‑K)</h2>
+      <p>The App is intended for use by children under 13 (or under 16 in some EU jurisdictions). We guarantee:</p>
+      <ul>
+        <li>We do not collect personal information from children</li>
+        <li>There are <strong>no account registration, name input, email input</strong>, or other personally identifiable input features</li>
+        <li>Only G-rated (general audience) ads are displayed</li>
+        <li>Child-directed flags are enabled in the ad SDK, and behavioral targeting is disabled</li>
+        <li>There are no in-app purchases</li>
+        <li>There are no social media sharing features</li>
+        <li>There are no links to external browsers or apps outside of ad units</li>
+      </ul>
+
+      <h2>5. Device Permissions</h2>
+      <p>The App only requests the minimum Android permissions required for ad delivery (e.g., <code>INTERNET</code>).</p>
+      <p>The App <strong>does not use</strong>:</p>
+      <ul>
+        <li>Microphone (<code>RECORD_AUDIO</code>)</li>
+        <li>Camera (<code>CAMERA</code>)</li>
+        <li>Location (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</li>
+        <li>Contacts (<code>READ_CONTACTS</code>)</li>
+        <li>Storage (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>)</li>
+        <li>Phone state (<code>READ_PHONE_STATE</code>)</li>
+      </ul>
+      <p>The text-to-speech feature uses the device's built-in TTS engine, and no audio data is transmitted externally.</p>
+
+      <h2>6. Data Retention and Deletion</h2>
+      <p>Progress data is stored only locally. To completely delete it:</p>
+      <ul>
+        <li>Uninstall the App</li>
+        <li>On Android: Settings → Apps → Moji Asobi Lesson → Storage → Clear Data</li>
+      </ul>
+      <p>We do not retain any data on any server.</p>
+
+      <h2>7. Security Measures</h2>
+      <p>The App has no external server, and user information is stored only on the device, so the risk of information leakage due to external unauthorized access is extremely limited.</p>
+
+      <h2>8. Links to Third-Party Sites</h2>
+      <p>The only way a user may be directed to another website is by tapping a displayed advertisement. We are not responsible for the information collection practices of any linked third-party websites.</p>
+
+      <h2>9. Changes to This Privacy Policy</h2>
+      <p>We may revise this Privacy Policy due to changes in law, feature additions, or operational changes. Significant changes will be announced in the App or on this page. Continued use of the App after such changes constitutes acceptance of the revised policy.</p>
+
+      <h2>10. Contact</h2>
+      <p>
+        <strong>Developer</strong>: DoM Co., Ltd.<br>
+        <strong>Email</strong>: <a href="mailto:e.kimura@dom-grp.com">e.kimura@dom-grp.com</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>© 2026 DoM Co., Ltd. All rights reserved.</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.lang-switch button');
+  const sections = document.querySelectorAll('[data-lang]');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.switch;
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.switch === lang));
+      sections.forEach(s => s.classList.toggle('visible', s.dataset.lang === lang));
+      document.documentElement.lang = lang;
+    });
+  });
+</script>
+</body>
+</html>
