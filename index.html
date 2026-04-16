@@ -128,20 +128,30 @@
       <div class="meta">
         <div><strong>アプリ名</strong>: もじあそび レッスン</div>
         <div><strong>開発者</strong>: 株式会社DoM</div>
-        <div><strong>最終更新日</strong>: 2026年4月11日</div>
-        <div><strong>施行日</strong>: 2026年4月11日</div>
+        <div><strong>最終更新日</strong>: 2026年4月16日</div>
+        <div><strong>施行日</strong>: 2026年4月16日</div>
       </div>
 
       <p>株式会社DoM（以下「当方」といいます）は、モバイルアプリケーション「もじあそび レッスン」（以下「本アプリ」といいます）における、利用者の情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
       <p>本アプリは未就学児・幼稚園児を主な利用者として想定した子ども向けアプリです。Google Play のファミリーポリシーおよび米国児童オンラインプライバシー保護法（COPPA）、EU 一般データ保護規則（GDPR、GDPR‑K）に沿った運営を行います。</p>
 
       <h2>1. 収集する情報</h2>
-      <p>本アプリは <strong>利用者の個人情報を一切収集しません</strong>。具体的には、氏名・メールアドレス・電話番号・位置情報・写真・連絡先・マイク音声・カメラ映像などを取得することはありません。</p>
-      <p>本アプリがアクセスする情報は次のものだけで、いずれも <strong>お使いの端末内部に保存され、外部サーバーに送信されることはありません</strong>。</p>
+      <p>本アプリは <strong>利用者を直接識別できる個人情報（氏名・メールアドレス・電話番号・位置情報・写真・連絡先・マイク音声・カメラ映像など）を一切収集しません</strong>。</p>
+      <p>本アプリが扱う情報は、次の2種類に分かれます。</p>
+
+      <h3>(1) 端末内部にのみ保存される情報</h3>
+      <p>次の情報は端末内部の <code>SharedPreferences</code> 領域にのみ保存され、当方のサーバーに送信されることはありません。本アプリをアンインストールすると同時に削除されます。</p>
       <ul>
         <li>練習の進捗（どの行を練習したか、達成した項目数、獲得したバッジ、連続練習日数、累計で練習した文字数など）</li>
       </ul>
-      <p>これらのデータは Android の <code>SharedPreferences</code> 領域に保存され、本アプリをアンインストールすると同時に削除されます。</p>
+
+      <h3>(2) 第三者サービスが収集する匿名の技術情報</h3>
+      <p>アプリの品質改善および不具合の早期発見のため、以下の第三者サービスが匿名の技術情報を自動的に収集します。個人を特定できる情報は含まれません。詳細は「3. 第三者提供・外部送信」をご確認ください。</p>
+      <ul>
+        <li><strong>Google AdMob</strong>: 広告配信のための識別子・IP アドレス等</li>
+        <li><strong>Google Firebase Analytics</strong>: 画面遷移・利用頻度などの匿名アプリ利用統計</li>
+        <li><strong>Google Firebase Crashlytics</strong>: アプリが異常終了した際の技術情報（スタックトレース・端末モデル・OS バージョン等）</li>
+      </ul>
 
       <h2>2. 情報の使用目的</h2>
       <p>端末内部に保存された進捗データは、以下の目的でのみ利用します。</p>
@@ -168,6 +178,31 @@
         <li>AdMob 子ども向けラベル付き広告: <a href="https://support.google.com/admob/answer/6223431" target="_blank" rel="noopener">https://support.google.com/admob/answer/6223431</a></li>
       </ul>
 
+      <h3>Google Firebase Analytics（利用状況の計測）</h3>
+      <p>本アプリはアプリの改善を目的として、Google Firebase Analytics により画面遷移やセッション回数などの匿名の利用統計を計測しています。アプリ起動時に Firebase が発行する「アプリインスタンス ID」と呼ばれるランダムな識別子により、同一端末における継続利用の傾向を集計していますが、利用者個人を特定する情報は含まれません。</p>
+      <p>本アプリは子ども向けアプリとして <strong>以下の設定を明示的に行い、広告関連のデータ利用をすべてオフにしています</strong>。</p>
+      <ul>
+        <li>広告に関するストレージの使用（<code>adStorageConsent</code>）を <strong>拒否</strong></li>
+        <li>広告に関するユーザーデータの送信（<code>adUserDataConsent</code>）を <strong>拒否</strong></li>
+        <li>広告のパーソナライズ（<code>adPersonalizationSignalsConsent</code>）を <strong>拒否</strong></li>
+        <li>Google Signals（ブラウザ横断のクッキー情報との統合）は <strong>未使用</strong></li>
+      </ul>
+      <p>計測データは Google の定めるデフォルト保持期間（最長14か月）を経過すると自動的に削除されます。</p>
+
+      <h3>Google Firebase Crashlytics（クラッシュレポート）</h3>
+      <p>アプリの不具合を把握し品質を改善するため、アプリが異常終了した場合に限り、次の情報が Google Firebase Crashlytics に送信されます。</p>
+      <ul>
+        <li>エラーのスタックトレース</li>
+        <li>端末モデル、OS バージョン、アプリバージョン、発生時刻</li>
+        <li>Crashlytics が発行するランダムな「インストール ID」</li>
+      </ul>
+      <p>利用者個人を特定できる情報や、練習内容・入力内容などは <strong>送信されません</strong>。</p>
+      <p>Firebase のプライバシーに関する詳細は以下をご参照ください。</p>
+      <ul>
+        <li>Firebase プライバシーとセキュリティ: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+        <li>Google Analytics データ保持: <a href="https://support.google.com/analytics/answer/7667196" target="_blank" rel="noopener">https://support.google.com/analytics/answer/7667196</a></li>
+      </ul>
+
       <h2>4. 子ども向けの取り扱いについて（COPPA / GDPR‑K）</h2>
       <p>本アプリは13歳未満（EU 一部の国では16歳未満）の子どもが使用することを想定しており、次の点を保証します。</p>
       <ul>
@@ -175,6 +210,7 @@
         <li>アカウント登録、氏名入力、メールアドレス入力などの個人識別が可能な入力機能を <strong>設けません</strong></li>
         <li>広告は G レーティング（全年齢対象）のもののみ表示されます</li>
         <li>広告配信時には子ども向けフラグが有効化され、行動ターゲティング広告は配信されません</li>
+        <li>Firebase Analytics で広告関連のデータ収集（広告パーソナライズ・広告ストレージ・広告ユーザーデータ）を <strong>すべてオフ</strong> に設定</li>
         <li>アプリ内課金（IAP）はありません</li>
         <li>ソーシャルメディア共有機能はありません</li>
         <li>外部ブラウザ・外部アプリへのリンクは、広告枠を除いて設けていません</li>
@@ -194,15 +230,19 @@
       <p>また、音声読み上げ機能は、端末 OS に搭載されている標準の Text‑to‑Speech（TTS）エンジンを呼び出しているだけで、音声データが外部に送信されることはありません。</p>
 
       <h2>6. データの保管期間と削除</h2>
+
+      <h3>端末内の進捗データ</h3>
       <p>進捗データはお使いの端末内部にのみ保存されます。データを完全に削除したい場合は、以下のいずれかの方法で実施してください。</p>
       <ul>
         <li>本アプリをアンインストールする</li>
         <li>Android の「設定 → アプリ → もじあそび レッスン → ストレージ → データを削除」を実行する</li>
       </ul>
-      <p>当方がサーバー側で保管しているデータはありません。</p>
+
+      <h3>第三者サービス（Firebase）のデータ</h3>
+      <p>Firebase Analytics および Firebase Crashlytics が収集する匿名データは、Google が定める保持期間（Analytics は最長14か月、Crashlytics は90日）を経過すると自動的に削除されます。当該データはアプリインスタンス ID 等のランダム識別子に紐づいているため、利用者個人を特定して削除する標準的な手段はありませんが、ご要望があれば「10. お問い合わせ」記載のメールアドレスまでご連絡ください。可能な範囲で対応いたします。</p>
 
       <h2>7. 安全管理措置</h2>
-      <p>本アプリは外部サーバーを持たず、利用者情報は端末内部にのみ保存されるため、外部からの不正アクセスによる情報漏えいリスクは非常に限定的です。端末自体のセキュリティ（画面ロック、OS の最新化など）を保つことで、進捗データの保護が可能です。</p>
+      <p>本アプリは自社サーバーを持たず、進捗データは端末内部にのみ保存されます。Firebase が収集する匿名データは Google のセキュリティ基準に従って管理されます（詳細: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>）。端末自体のセキュリティ（画面ロック、OS の最新化など）を保つことで、進捗データの保護が可能です。</p>
 
       <h2>8. 第三者サイトへのリンク</h2>
       <p>本アプリから他のウェブサイトや外部サービスへ遷移する可能性があるのは、表示される広告をタップした場合のみです。遷移先のウェブサイトの情報収集については、当方は責任を負いかねますので、各ウェブサイトのプライバシーポリシーをご確認ください。</p>
@@ -214,7 +254,7 @@
       <p>本プライバシーポリシーまたは本アプリに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
       <p>
         <strong>開発者</strong>: 株式会社DoM<br>
-        <strong>メールアドレス</strong>: <a href="mailto:support@dom-grp.com">support@dom-grp.com</a>
+        <strong>メールアドレス</strong>: <a href="mailto:e.kimura@dom-grp.com">e.kimura@dom-grp.com</a>
       </p>
     </article>
 
@@ -224,20 +264,30 @@
       <div class="meta">
         <div><strong>App Name</strong>: Moji Asobi Lesson (もじあそび レッスン)</div>
         <div><strong>Developer</strong>: DoM Co., Ltd. (株式会社DoM)</div>
-        <div><strong>Last Updated</strong>: April 11, 2026</div>
-        <div><strong>Effective Date</strong>: April 11, 2026</div>
+        <div><strong>Last Updated</strong>: April 16, 2026</div>
+        <div><strong>Effective Date</strong>: April 16, 2026</div>
       </div>
 
       <p>DoM Co., Ltd. ("we", "us", "our") provides this Privacy Policy regarding the handling of information in the mobile application "Moji Asobi Lesson" (the "App").</p>
       <p>The App is designed primarily for preschool children. We operate the App in compliance with the Google Play Families Policy, the US Children's Online Privacy Protection Act (COPPA), and the EU General Data Protection Regulation (GDPR and GDPR‑K).</p>
 
       <h2>1. Information We Collect</h2>
-      <p><strong>We do not collect any personal information from users.</strong> Specifically, we do not collect names, email addresses, phone numbers, location data, photos, contacts, microphone audio, or camera video.</p>
-      <p>The App only stores the following data, all of which is <strong>kept locally on the user's device and never transmitted to any external server</strong>:</p>
+      <p><strong>We do not collect any directly identifying personal information</strong> such as names, email addresses, phone numbers, location data, photos, contacts, microphone audio, or camera video.</p>
+      <p>The information handled by the App falls into two categories:</p>
+
+      <h3>(1) Information stored only on the device</h3>
+      <p>The following data is stored solely in Android's <code>SharedPreferences</code> on the user's device and is <strong>never transmitted to our servers</strong>. It is deleted when the App is uninstalled.</p>
       <ul>
         <li>Practice progress (which rows have been practiced, achievements, earned badges, consecutive practice day streak, total characters written)</li>
       </ul>
-      <p>This data is stored in Android's <code>SharedPreferences</code> and is deleted when the App is uninstalled.</p>
+
+      <h3>(2) Anonymous technical information collected by third-party services</h3>
+      <p>To improve App quality and detect issues early, the following third-party services automatically collect anonymous technical information. No personally identifying information is included. See "3. Third Parties and External Transmission" for details.</p>
+      <ul>
+        <li><strong>Google AdMob</strong>: advertising identifiers, IP addresses, etc.</li>
+        <li><strong>Google Firebase Analytics</strong>: anonymous app usage statistics such as screen transitions and session counts</li>
+        <li><strong>Google Firebase Crashlytics</strong>: technical information collected only when the App crashes (stack trace, device model, OS version, etc.)</li>
+      </ul>
 
       <h2>2. How We Use the Information</h2>
       <p>The locally stored progress data is used solely for the following purposes:</p>
@@ -264,6 +314,31 @@
         <li>AdMob child-directed treatment: <a href="https://support.google.com/admob/answer/6223431" target="_blank" rel="noopener">https://support.google.com/admob/answer/6223431</a></li>
       </ul>
 
+      <h3>Google Firebase Analytics (Usage Metrics)</h3>
+      <p>The App uses Google Firebase Analytics to collect anonymous usage statistics such as screen transitions and session counts, solely for the purpose of improving the App. Firebase issues a random identifier called an "App Instance ID" at launch, which is used to aggregate continued usage trends on the same device. No information that personally identifies the user is collected.</p>
+      <p>As a child-directed app, the App <strong>explicitly disables all advertising-related data usage</strong> in Firebase Analytics:</p>
+      <ul>
+        <li>Storage of advertising data (<code>adStorageConsent</code>) is <strong>denied</strong></li>
+        <li>Sending of ad-related user data (<code>adUserDataConsent</code>) is <strong>denied</strong></li>
+        <li>Ad personalization signals (<code>adPersonalizationSignalsConsent</code>) are <strong>denied</strong></li>
+        <li>Google Signals (cross-browser cookie integration) is <strong>not used</strong></li>
+      </ul>
+      <p>Analytics data is automatically deleted after Google's default retention period (up to 14 months).</p>
+
+      <h3>Google Firebase Crashlytics (Crash Reporting)</h3>
+      <p>To identify and resolve defects, the following information is sent to Google Firebase Crashlytics <strong>only when the App terminates abnormally</strong>:</p>
+      <ul>
+        <li>Error stack trace</li>
+        <li>Device model, OS version, App version, and timestamp of the crash</li>
+        <li>A random "Installation ID" issued by Crashlytics</li>
+      </ul>
+      <p>No information that personally identifies the user, and no practice content or input, is transmitted.</p>
+      <p>For details about Firebase privacy, see:</p>
+      <ul>
+        <li>Firebase Privacy and Security: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+        <li>Google Analytics Data Retention: <a href="https://support.google.com/analytics/answer/7667196" target="_blank" rel="noopener">https://support.google.com/analytics/answer/7667196</a></li>
+      </ul>
+
       <h2>4. Child-Directed Treatment (COPPA / GDPR‑K)</h2>
       <p>The App is intended for use by children under 13 (or under 16 in some EU jurisdictions). We guarantee:</p>
       <ul>
@@ -271,6 +346,7 @@
         <li>There are <strong>no account registration, name input, email input</strong>, or other personally identifiable input features</li>
         <li>Only G-rated (general audience) ads are displayed</li>
         <li>Child-directed flags are enabled in the ad SDK, and behavioral targeting is disabled</li>
+        <li>All advertising-related data collection in Firebase Analytics (ad personalization, ad storage, ad user data) is <strong>disabled</strong></li>
         <li>There are no in-app purchases</li>
         <li>There are no social media sharing features</li>
         <li>There are no links to external browsers or apps outside of ad units</li>
@@ -290,15 +366,19 @@
       <p>The text-to-speech feature uses the device's built-in TTS engine, and no audio data is transmitted externally.</p>
 
       <h2>6. Data Retention and Deletion</h2>
-      <p>Progress data is stored only locally. To completely delete it:</p>
+
+      <h3>On-device progress data</h3>
+      <p>Progress data is stored only locally on the user's device. To completely delete it:</p>
       <ul>
         <li>Uninstall the App</li>
         <li>On Android: Settings → Apps → Moji Asobi Lesson → Storage → Clear Data</li>
       </ul>
-      <p>We do not retain any data on any server.</p>
+
+      <h3>Data held by third-party services (Firebase)</h3>
+      <p>Anonymous data collected by Firebase Analytics and Firebase Crashlytics is automatically deleted after the retention period defined by Google (up to 14 months for Analytics, 90 days for Crashlytics). Because such data is tied to random identifiers (App Instance ID, Installation ID), there is no standard way to delete data for a specific individual user. If you have a request, please contact us at the email address in "10. Contact" and we will respond to the extent possible.</p>
 
       <h2>7. Security Measures</h2>
-      <p>The App has no external server, and user information is stored only on the device, so the risk of information leakage due to external unauthorized access is extremely limited.</p>
+      <p>The App operates without our own server; progress data is stored solely on the device. Anonymous data collected by Firebase is managed according to Google's security standards (see <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a> for details). Maintaining the device's own security (screen lock, OS updates) helps protect your progress data.</p>
 
       <h2>8. Links to Third-Party Sites</h2>
       <p>The only way a user may be directed to another website is by tapping a displayed advertisement. We are not responsible for the information collection practices of any linked third-party websites.</p>
@@ -309,7 +389,7 @@
       <h2>10. Contact</h2>
       <p>
         <strong>Developer</strong>: DoM Co., Ltd.<br>
-        <strong>Email</strong>: <a href="mailto:support@dom-grp.com">support@dom-grp.com</a>
+        <strong>Email</strong>: <a href="mailto:e.kimura@dom-grp.com">e.kimura@dom-grp.com</a>
       </p>
     </article>
   </main>
