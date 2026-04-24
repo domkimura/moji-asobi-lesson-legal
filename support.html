@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>サポート — もじあそび レッスン</title>
+<style>
+  :root {
+    --primary: #FFA726;
+    --primary-dark: #FB8C00;
+    --text: #263238;
+    --muted: #607D8B;
+    --bg: #FFF8E1;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.75;
+  }
+  header {
+    background: linear-gradient(135deg, #FFB74D, var(--primary-dark));
+    color: white;
+    padding: 32px 24px 24px;
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+  header .app-title {
+    font-size: 14px;
+    opacity: 0.95;
+  }
+  .lang-switch {
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+  }
+  .lang-switch button {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .lang-switch button.active,
+  .lang-switch button:hover {
+    background: white;
+    color: var(--primary-dark);
+  }
+  main {
+    max-width: 780px;
+    margin: 24px auto 60px;
+    padding: 0 24px;
+  }
+  article {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px 32px 40px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  article h1 {
+    font-size: 22px;
+    margin-top: 0;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 8px;
+  }
+  article h2 {
+    font-size: 17px;
+    margin-top: 28px;
+    color: var(--primary-dark);
+  }
+  article h3 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  article p { margin: 10px 0; }
+  article ul { padding-left: 24px; }
+  article li { margin: 4px 0; }
+  article code {
+    background: #F5F5F5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  article a { color: var(--primary-dark); }
+  article strong { color: var(--text); }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .meta > div { margin: 2px 0; }
+  .contact-box {
+    background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 18px 0;
+  }
+  .contact-box strong { color: var(--primary-dark); }
+  details {
+    background: #FAFAFA;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin: 8px 0;
+  }
+  details[open] {
+    background: #FFF8E1;
+  }
+  details summary {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 6px 0;
+    outline: none;
+  }
+  details summary::-webkit-details-marker { color: var(--primary); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    padding: 16px;
+  }
+  [data-lang] { display: none; }
+  [data-lang].visible { display: block; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>サポート / Support</h1>
+    <div class="app-title">もじあそび レッスン — Moji Asobi Lesson</div>
+    <div class="lang-switch">
+      <button type="button" data-switch="ja" class="active">日本語</button>
+      <button type="button" data-switch="en">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 日本語版 -->
+    <article data-lang="ja" class="visible">
+      <h1>サポート</h1>
+      <div class="meta">
+        <div><strong>アプリ名</strong>: もじあそび レッスン</div>
+        <div><strong>開発者</strong>: 株式会社DoM</div>
+        <div><strong>最終更新日</strong>: 2026年4月24日</div>
+      </div>
+
+      <p>「もじあそび レッスン」をご利用いただきありがとうございます。このページでは、よくある質問への回答と、お問い合わせ先をご案内します。</p>
+
+      <h2>お問い合わせ先</h2>
+      <div class="contact-box">
+        <p>ご質問・不具合報告・ご要望は、以下のメールアドレスまでお送りください。</p>
+        <p><strong>メール</strong>: <a href="mailto:e.kimura@dom-grp.com">e.kimura@dom-grp.com</a></p>
+        <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">※ 返信までに数営業日いただく場合があります。<br>※ 内容によっては返信いたしかねる場合があります。</p>
+      </div>
+
+      <h2>よくある質問</h2>
+
+      <h3>遊び方・操作について</h3>
+
+      <details>
+        <summary>どうやって練習を始めるの？</summary>
+        <p>ホーム画面で「ひらがな」または「カタカナ」を選び、練習したい行（「あ行」「か行」など）をタップすると練習が始まります。1回の練習で5文字を順番に書き取ります。</p>
+      </details>
+
+      <details>
+        <summary>左側に出てくる絵は何？</summary>
+        <p>練習中の文字から始まることばのイラストです（例: 「あ」なら「あり」「あめ」など）。10個のなかから3個をランダムに表示し、頭文字のイメージをつかめるようにしています。読み上げボタンを押すと「〇〇の あ」のように声に出して読み上げます。</p>
+      </details>
+
+      <details>
+        <summary>書いた字はどうやって評価されるの？</summary>
+        <p>3つのポイントで評価しています:</p>
+        <ul>
+          <li><strong>かきじゅん</strong>: 正しい順番・画数で書けているか（厳しめに判定）</li>
+          <li><strong>かたち</strong>: お手本と似た形になっているか（少し甘めに判定）</li>
+          <li><strong>バランス</strong>: 中央付近にちょうどよい大きさで書けているか（少し厳しめに判定）</li>
+        </ul>
+        <p>3つすべて達成すると ⭐⭐⭐ がもらえます。</p>
+      </details>
+
+      <details>
+        <summary>書き直しはできる？</summary>
+        <p>はい。画面下の「けす」で全消去、「もどす」で直前の1画だけ取り消しできます。納得いくまで何度でも書き直せます。</p>
+      </details>
+
+      <details>
+        <summary>バッジはどうやって獲得できる？</summary>
+        <p>初めての練習、連続練習日数、ひらがな・カタカナ全制覇など、さまざまな節目でバッジがもらえます。ホーム画面右上のトロフィーアイコンから獲得済みのバッジを確認できます。</p>
+      </details>
+
+      <h3>音声・読み上げについて</h3>
+
+      <details>
+        <summary>読み上げの声が出ない</summary>
+        <p>端末の音量が下がっている、またはマナーモードになっていないかご確認ください。また、端末に標準搭載されている Text-to-Speech (TTS) エンジンを使用しているため、端末の「設定」→「アクセシビリティ」→「読み上げコンテンツ」→「日本語の音声」が利用可能になっているかもご確認ください。</p>
+      </details>
+
+      <details>
+        <summary>読み上げの速度は変えられる？</summary>
+        <p>アプリ内からの変更はできませんが、端末の「設定」で TTS エンジンの読み上げ速度を調整すると反映されます。</p>
+      </details>
+
+      <h3>対応端末・画面の向きについて</h3>
+
+      <details>
+        <summary>対応している端末は？</summary>
+        <p>Android 6.0 以降のスマートフォン・タブレットと、iOS 13 以降の iPhone・iPad でご利用いただけます。</p>
+      </details>
+
+      <details>
+        <summary>横画面では使えないの？</summary>
+        <p>スマートフォンでは<strong>縦画面固定</strong>にしています（幼児が画面を持ちやすく、誤操作を防ぐため)。<br>タブレットでは縦・横どちらもご利用いただけます。</p>
+      </details>
+
+      <h3>広告について</h3>
+
+      <details>
+        <summary>どんな広告が表示されますか？</summary>
+        <p>Google AdMob のバナー広告（画面下部に常時表示）と、練習セッション終了時のインタースティシャル広告（画面全体）を表示しています。<br>本アプリは<strong>子ども向けアプリ</strong>として設定しており、表示される広告は全年齢対象（Gレーティング）のみ、行動ターゲティング広告は配信されません。</p>
+      </details>
+
+      <details>
+        <summary>広告を非表示にすることはできますか？</summary>
+        <p>現在のバージョンでは広告を非表示にする設定はありません。広告収益はアプリ開発・運営の原資となっておりますので、ご理解いただけますと幸いです。</p>
+      </details>
+
+      <h3>データ・プライバシーについて</h3>
+
+      <details>
+        <summary>練習の進捗はどこに保存されている？</summary>
+        <p>お使いの端末の内部（Android の SharedPreferences）にのみ保存されます。当方のサーバーへ送信されることはありません。アプリをアンインストールすると進捗データも削除されます。</p>
+      </details>
+
+      <details>
+        <summary>進捗データを完全に削除したい</summary>
+        <p>以下のいずれかの方法で削除できます:</p>
+        <ul>
+          <li>アプリをアンインストールする</li>
+          <li>端末の「設定」→「アプリ」→「もじあそび レッスン」→「ストレージ」→「データを削除」</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>個人情報は収集していますか？</summary>
+        <p>氏名・メール・位置情報・写真・連絡先・マイク音声・カメラ映像などの<strong>個人を特定する情報は一切取得していません</strong>。アプリの改善のために、Google Firebase Analytics および Crashlytics で匿名の利用統計とクラッシュ情報を収集しています。詳細は<a href="index.html">プライバシーポリシー</a>をご覧ください。</p>
+      </details>
+
+      <h3>不具合・エラー報告</h3>
+
+      <details>
+        <summary>アプリが落ちる／動かない</summary>
+        <p>まずは以下をお試しください:</p>
+        <ul>
+          <li>アプリを一度終了して、もう一度起動する</li>
+          <li>端末を再起動する</li>
+          <li>ストアから最新版にアップデートする</li>
+          <li>空き容量が十分あるか確認する</li>
+        </ul>
+        <p>それでも解決しない場合は、上記のメールアドレスまで <strong>端末機種名</strong>・<strong>OSバージョン</strong>・<strong>アプリバージョン</strong>・<strong>発生手順</strong>を添えてご連絡ください。</p>
+      </details>
+
+      <details>
+        <summary>特定の文字で書き順の判定がおかしい</summary>
+        <p>書き順データは KanjiVG（CC BY-SA 3.0）を使用しています。一部のかなで教科書体と異なる場合があるため調整中です。具体的な文字を教えていただければ対応を検討します。</p>
+      </details>
+
+      <h2>関連リンク</h2>
+      <ul>
+        <li><a href="index.html">プライバシーポリシー</a></li>
+      </ul>
+    </article>
+
+    <!-- English version -->
+    <article data-lang="en">
+      <h1>Support</h1>
+      <div class="meta">
+        <div><strong>App Name</strong>: Moji Asobi Lesson (もじあそび レッスン)</div>
+        <div><strong>Developer</strong>: DoM Co., Ltd. (株式会社DoM)</div>
+        <div><strong>Last Updated</strong>: April 24, 2026</div>
+      </div>
+
+      <p>Thank you for using Moji Asobi Lesson. This page answers frequently asked questions and provides our contact information.</p>
+
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <p>For questions, bug reports, or feature requests, please email us:</p>
+        <p><strong>Email</strong>: <a href="mailto:e.kimura@dom-grp.com">e.kimura@dom-grp.com</a></p>
+        <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">* Replies may take several business days.<br>* Depending on the content, we may not be able to respond.</p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How to Play</h3>
+
+      <details>
+        <summary>How do I start a practice session?</summary>
+        <p>From the home screen, choose either "Hiragana" or "Katakana," then tap a row (such as "あ row" or "か row"). Each session guides you through writing 5 characters in order.</p>
+      </details>
+
+      <details>
+        <summary>What are the images on the left side?</summary>
+        <p>They are illustrations of words starting with the character you're practicing (e.g., for "あ" you see words like "あり/ant" and "あめ/candy"). Three images are randomly picked from a pool of 10. Tap the speaker button to hear "ari no a" and similar read-alouds to help children associate the character with words.</p>
+      </details>
+
+      <details>
+        <summary>How is my writing evaluated?</summary>
+        <p>We evaluate three points:</p>
+        <ul>
+          <li><strong>Stroke Order</strong>: whether strokes are drawn in the correct sequence (strict)</li>
+          <li><strong>Shape</strong>: whether the result resembles the model (lenient)</li>
+          <li><strong>Balance</strong>: whether the character is centered with an appropriate size (slightly strict)</li>
+        </ul>
+        <p>Achieving all three earns ⭐⭐⭐.</p>
+      </details>
+
+      <details>
+        <summary>Can I redo my writing?</summary>
+        <p>Yes. Use "Clear" to erase everything, or "Undo" to remove just the last stroke. You can retry as many times as you like.</p>
+      </details>
+
+      <details>
+        <summary>How do I earn badges?</summary>
+        <p>Badges are awarded for various milestones, such as your first practice, consecutive practice days, or completing all hiragana and katakana. Tap the trophy icon in the upper right of the home screen to see your earned badges.</p>
+      </details>
+
+      <h3>Audio / Read-Aloud</h3>
+
+      <details>
+        <summary>The read-aloud voice isn't playing</summary>
+        <p>Please make sure your device's volume is up and silent mode is off. The app uses your device's built-in Text-to-Speech (TTS) engine, so please also check that a Japanese voice is available under your device's accessibility / TTS settings.</p>
+      </details>
+
+      <details>
+        <summary>Can I change the read-aloud speed?</summary>
+        <p>There is no in-app setting, but you can adjust the TTS speed in your device's system settings and the app will follow it.</p>
+      </details>
+
+      <h3>Supported Devices / Orientation</h3>
+
+      <details>
+        <summary>Which devices are supported?</summary>
+        <p>Android 6.0 or later phones and tablets, and iOS 13 or later iPhones and iPads.</p>
+      </details>
+
+      <details>
+        <summary>Can I use landscape mode?</summary>
+        <p>On phones, we <strong>lock to portrait</strong> (to make it easier for young children to hold the device and avoid mis-taps).<br>On tablets, both portrait and landscape are supported.</p>
+      </details>
+
+      <h3>Ads</h3>
+
+      <details>
+        <summary>What ads are shown?</summary>
+        <p>Google AdMob banner ads (always at the bottom of the screen) and a full-screen interstitial ad at the end of each practice session.<br>The app is explicitly configured as a <strong>child-directed app</strong>. Only G-rated (general audience) ads are shown, and no behavioral targeting is used.</p>
+      </details>
+
+      <details>
+        <summary>Can I disable ads?</summary>
+        <p>The current version does not offer an ad-free option. Ad revenue supports the ongoing development and operation of the app. We appreciate your understanding.</p>
+      </details>
+
+      <h3>Data / Privacy</h3>
+
+      <details>
+        <summary>Where is my practice progress stored?</summary>
+        <p>Only on your device (in Android's SharedPreferences). It is never transmitted to our servers. Uninstalling the app also deletes your progress data.</p>
+      </details>
+
+      <details>
+        <summary>How do I completely delete my data?</summary>
+        <p>You can delete it in either of the following ways:</p>
+        <ul>
+          <li>Uninstall the app</li>
+          <li>Go to Settings → Apps → Moji Asobi Lesson → Storage → Clear Data</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Do you collect personal information?</summary>
+        <p>We do <strong>not</strong> collect any directly identifying personal information such as names, emails, location, photos, contacts, microphone audio, or camera video. To improve the app, Google Firebase Analytics and Crashlytics collect anonymous usage statistics and crash information. See the <a href="index.html">Privacy Policy</a> for details.</p>
+      </details>
+
+      <h3>Bug / Error Reports</h3>
+
+      <details>
+        <summary>The app crashes or doesn't work</summary>
+        <p>Please try the following first:</p>
+        <ul>
+          <li>Quit the app completely and relaunch</li>
+          <li>Restart your device</li>
+          <li>Update the app to the latest version in the store</li>
+          <li>Check that you have enough free storage</li>
+        </ul>
+        <p>If the issue persists, please email us with your <strong>device model</strong>, <strong>OS version</strong>, <strong>app version</strong>, and <strong>steps to reproduce</strong>.</p>
+      </details>
+
+      <details>
+        <summary>Stroke-order detection seems off for a specific character</summary>
+        <p>Stroke-order data comes from KanjiVG (CC BY-SA 3.0). Some kana may differ slightly from the Japanese textbook style, and we are adjusting them. If you can share the specific character, we'll consider a fix.</p>
+      </details>
+
+      <h2>Related Links</h2>
+      <ul>
+        <li><a href="index.html">Privacy Policy</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>© 2026 DoM Co., Ltd. All rights reserved.</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.lang-switch button');
+  const sections = document.querySelectorAll('[data-lang]');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.switch;
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.switch === lang));
+      sections.forEach(s => s.classList.toggle('visible', s.dataset.lang === lang));
+      document.documentElement.lang = lang;
+    });
+  });
+</script>
+</body>
+</html>
